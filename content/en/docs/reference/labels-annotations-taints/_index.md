@@ -1057,6 +1057,9 @@ Used on: Pod
 The Job controller in the kube-controller-manager sets this as a label and annotation for Pods
 created with Indexed [completion mode](/docs/concepts/workloads/controllers/job/#completion-mode).
 
+Note the [PodIndexLabel](content/en/docs/reference/command-line-tools-reference/feature-gates.md) feature gate must be enabled
+for this to be added as a pod **label**, otherwise it will just be an annotation.
+
 ### batch.kubernetes.io/cronjob-scheduled-timestamp
 
 Type: Annotation
