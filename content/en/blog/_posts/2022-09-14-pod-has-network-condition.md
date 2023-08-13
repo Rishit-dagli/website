@@ -26,9 +26,8 @@ repeatedly fail to come up.
 ### Updates for Kubernetes 1.28
 
 The `PodHasNetwork` condition has been renamed to `PodReadyToStartContainers`.
-Alongside that change, the feature gate `PodHasNetworkCondition` has been replaced by
-`PodReadyToStartContainersCondition`. You need to set `PodReadyToStartContainersCondition`
-to true in order to use the new feature in v1.28.0 and later.
+To enable this alpha feature you have to set the feature toggle PodReadyToStartContainersCondition 
+to true.
 
 ### How is this different from the existing Initialized condition reported for pods?
 
